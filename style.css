@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #082f49;
+}
+
+/* General */
+.bigContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+.midContainer {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+/* Icons */
+.iconSmall {
+  height: 15px;
+  margin-bottom: 1px;
+}
+.iconBig {
+  height: 35px;
+}
+
+/* Section */
+/* nav */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+.logo {
+  font-size: 24px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: none;
+  background-color: #bae6fd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.124);
+  scale: 1.05;
+  transform: translateY(-2px);
+}
+
+.heroSection {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.primaryHeading {
+  font-size: 75px;
+  color: #0c4a6e;
+  margin-bottom: 25px;
+}
+
+.secondaryHeading {
+  font-size: 65px;
+  color: #0c4a6e;
+  margin-bottom: 18px;
+}
+
+.sectionSubHeading {
+  font-size: 25px;
+  color: #0c4a6e;
+  margin-bottom: 10px;
+}
+
+.paraSizeMid {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.ColorAsh {
+  color: #7e7e7e;
+}
+
+.flexAlignC {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.heroButton {
+  padding: 20px 30px;
+  background-color: #0c4a6e;
+  border-radius: 12px;
+  color: #f0fdf4;
+}
+header {
+  position: relative;
+}
+.heroImg {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  max-width: 50vw;
+  z-index: -999;
+}
+/* targetSection */
+.targetSection,
+.caloriesSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 80px;
+}
+.buttonAppStore {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 15px;
+}
+.buttonText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: inherit;
+}
+.white {
+  background-color: #bae6fd;
+  color: #0c4a6e;
+}
+.black {
+  background-color: #0c4a6e;
+  color: #f8fdff;
+}
+.background {
+  position: relative;
+}
+
+.sectionBackgroundImg {
+  position: absolute;
+  left: 0;
+  top: 8%;
+  z-index: -999;
+}
+.trackdetails {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 80px;
+}
+.trackMain {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.imgGrid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 30px;
+  margin-top: 20px;
+}
+.imgShadow {
+  box-shadow: 0 0 10px #c9c9c963;
+  border-radius: 28px;
+}
+.margintop {
+  margin-top: 30px;
+}
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.rightSecionSingle {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.companyImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.joinSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background-color: #bae6fd;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.joinText {
+  margin-left: 20%;
+}
+.joinSectionWidth {
+  width: 70%;
+}
+.footer {
+  text-align: center;
+  color: #7e7e7e;
+  padding-bottom: 15px;
+  border-bottom: 7px solid #bae6fd;
+}
+/* Responsive for tablet */
+@media (max-device-width: 1200px) {
+  .bigContainer {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .midContainer {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .heroImg {
+    max-width: 60vw;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+
+    z-index: -999;
+  }
+  .primaryHeading {
+    font-size: 65px;
+    margin-bottom: 23px;
+  }
+  .secondaryHeading {
+    font-size: 55px;
+    color: #0c4a6e;
+    margin-bottom: 18px;
+  }
+  .targetImg {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .trackdetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 80px;
+  }
+  .imgGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .rightSection {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .rightSecionSingle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    & img {
+      margin-left: -10px;
+    }
+  }
+  .targetSection {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 80px;
+  }
+  .caloriesSection {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .targetImg {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-device-width: 1005px) {
+  .imgGrid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    transform: scale(1.5);
+    margin: 120px auto;
+  }
+  .secondaryHeading {
+    font-size: 45px;
+  }
+  .joinSection {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .joinText {
+    margin-left: 10%;
+  }
+  .joinSectionWidth {
+    width: 90%;
+  }
+}
+
+@media (max-device-width: 800px) {
+  .heroImg {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    max-width: 80vw;
+    z-index: -999;
+  }
+  .sectionBackgroundImg {
+    width: 90%;
+    overflow-x: hidden;
+  }
+}
+@media (max-device-width: 710px) {
+  .primaryHeading {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .secondaryHeading {
+    font-size: 30px;
+    color: #0c4a6e;
+    margin-bottom: 16px;
+  }
+  .targetSection,
+  .caloriesSection,
+  .joinSection {
+    grid-template-columns: 1fr;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 40px;
+  }
+  .joinText {
+    padding-top: 70px;
+    padding-left: 30px;
+    margin-left: 0;
+  }
+}
+@media (max-device-width: 610px) {
+  .imgGrid {
+    grid-template-columns: 150px 150px;
+    transform: scale(1.2);
+    margin: 50px auto;
+  }
+  .button {
+    font-size: 12px;
+    padding: 14px 28px;
+  }
+}
+@media (max-device-width: 500px) {
+  .imgGrid {
+    transform: scale(1);
+    margin: 40px auto;
+  }
+}
+@media (max-device-width: 425px) {
+  .imgGrid {
+    transform: scale(1);
+    margin: -50px 0 0;
+  }
+  .rightSection {
+    flex-direction: column;
+  }
+  .trackdetails {
+    width: 90%;
+  }
+}
